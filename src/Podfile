@@ -1,12 +1,16 @@
 source 'https://github.com/CocoaPods/Specs'
 
-platform :ios, '8.0'
+platform :ios, '9.0'
 
 # Uncomment this line if you use Swift
 # use_frameworks!
 
 target 'Shuffle' do
   # Application Pods
+  pod 'AFNetworking', '~> 3.1'
+  pod 'Realm', '~> 1.1'
+  # pod 'Realm+JSON', '~> 0.2'
+  pod 'Realm+JSON', :git => 'https://github.com/matthewcheok/Realm-JSON', :commit => 'e5d69f0fb0d541cc2235a99c70a00b5bd0c0c59c'
 end
 
 abstract_target :unit_tests do
